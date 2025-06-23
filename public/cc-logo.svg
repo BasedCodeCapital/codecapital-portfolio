@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Black background -->
+  <rect width="32" height="32" fill="#0a0a0a"/>
+  
+  <!-- Glitch effect background layers -->
+  <text x="15.5" y="22.5" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#00ff41" opacity="0.3" text-anchor="middle">&lt;/&gt;</text>
+  <text x="16.5" y="21.5" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#ff0040" opacity="0.3" text-anchor="middle">&lt;/&gt;</text>
+  
+  <!-- Main CC text -->
+  <text x="16" y="22" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#ff6b00" text-anchor="middle">&lt;/&gt;</text>
+  
+  <!-- Terminal cursor blink -->
+  <rect x="24" y="16" width="2" height="8" fill="#ff6b00" opacity="0.8">
+    <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Scanline effect -->
+  <rect x="0" y="0" width="32" height="1" fill="#ff6b00" opacity="0.2">
+    <animate attributeName="y" from="-1" to="32" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg> 

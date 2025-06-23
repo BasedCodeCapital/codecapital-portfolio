@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   description: "Full-stack developer turning coffee into code. Building cool stuff with Web3, AI, and whatever else seems fun. Warning: May contain bugs features.",
   keywords: ["developer", "portfolio", "web3", "blockchain", "full-stack", "typescript", "react", "solidity", "defi", "cyberpunk"],
   authors: [{ name: "Code Capital" }],
+  icons: {
+    icon: [
+      { url: '/cc-logo.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', type: 'image/x-icon' },
+    ],
+    shortcut: '/cc-logo.svg',
+    apple: '/cc-logo.svg',
+  },
   openGraph: {
     title: "Code Capital | Developer & Digital Alchemist", 
     description: "Portfolio of a developer who builds things that (mostly) work. Featuring terminals, glitch effects, and an unhealthy amount of coffee references.",
