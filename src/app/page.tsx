@@ -188,116 +188,57 @@ export default function Home() {
                 </button>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Project Cards */}
+              <div className="flex items-center justify-center min-h-[400px]">
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 }}
-                  className="terminal-window group cursor-pointer hover:border-hacker-orange-bright transition-all duration-300"
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ delay: 0.2, type: "spring" }}
                 >
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-typewriter text-hacker-orange group-hover:animate-pulse">
-                      DeFi_Thing.sol
-                    </h3>
-                    <pre className="text-sm text-hacker-green opacity-80">
-{`Type: AMM + Yield Farm
-Chain: Ethereum (gas go brrr)
-Status: Audited ✓
-Bugs: Yes, but they're features
-
-> Swap tokens
-> Farm yields  
-> Lose money efficiently™`}
-                    </pre>
-                    <div className="flex gap-2 text-xs">
-                      <span className="px-2 py-1 border border-hacker-orange text-hacker-orange">Solidity</span>
-                      <span className="px-2 py-1 border border-hacker-orange text-hacker-orange">DeFi</span>
-                      <span className="px-2 py-1 border border-hacker-orange text-hacker-orange">Web3</span>
+                  <StyledBox className="max-w-2xl">
+                    <div className="text-hacker-orange font-typewriter space-y-4 text-center p-8">
+                      <motion.div 
+                        className="text-4xl mb-6"
+                        animate={{ rotate: [0, 5, -5, 0] }}
+                        transition={{ duration: 2, repeat: Infinity }}
+                      >
+                        🚧 👷‍♂️ 🚧
+                      </motion.div>
+                      
+                      <h3 className="text-2xl animate-pulse">UNDER CONSTRUCTION</h3>
+                      
+                      <div className="space-y-2 text-sm text-hacker-green">
+                        <p>{'>'} Projects are currently being migrated to Web5</p>
+                        <p>{'>'} (Yes, we skipped Web4. It was cringe.)</p>
+                      </div>
+                      
+                      <div className="my-4 text-hacker-red">
+                        <pre className="text-xs">
+{`Error: Cannot display projects
+Reason: Developer.prototype.finishProject is not a function`}
+                        </pre>
+                      </div>
+                      
+                      <div className="space-y-1 text-xs text-hacker-orange-dim">
+                        <p>Meanwhile, here's what I'm probably doing:</p>
+                        <p>• Arguing with TypeScript about types</p>
+                        <p>• Centering divs (still)</p>
+                        <p>• Googling "how to exit vim"</p>
+                        <p>• Refactoring code that already works</p>
+                      </div>
+                      
+                      <motion.div 
+                        className="mt-6 text-lg"
+                        animate={{ opacity: [0.5, 1, 0.5] }}
+                        transition={{ duration: 2, repeat: Infinity }}
+                      >
+                        Check back Soon™
+                      </motion.div>
+                      
+                      <div className="text-xs text-hacker-green mt-4">
+                        Last update: Just now | Next update: Eventually
+                      </div>
                     </div>
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 }}
-                  className="terminal-window group cursor-pointer hover:border-hacker-orange-bright transition-all duration-300"
-                >
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-typewriter text-hacker-orange group-hover:animate-pulse">
-                      NFT_Marketplace_v69
-                    </h3>
-                    <pre className="text-sm text-hacker-green opacity-80">
-{`Type: JPEG Store
-Status: It mints! 
-Sales: Mom bought one
-Features: 
-
-> Right-click protection (jk)
-> IPFS (when it works)
-> Royalties (maybe)`}
-                    </pre>
-                    <div className="flex gap-2 text-xs">
-                      <span className="px-2 py-1 border border-hacker-orange text-hacker-orange">NFTs</span>
-                      <span className="px-2 py-1 border border-hacker-orange text-hacker-orange">React</span>
-                      <span className="px-2 py-1 border border-hacker-orange text-hacker-orange">IPFS</span>
-                    </div>
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 }}
-                  className="terminal-window group cursor-pointer hover:border-hacker-orange-bright transition-all duration-300"
-                >
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-typewriter text-hacker-orange group-hover:animate-pulse">
-                      AI_Assistant_2077
-                    </h3>
-                    <pre className="text-sm text-hacker-green opacity-80">
-{`Type: Skynet Beta
-Status: Mostly harmless
-IQ: Over 9000 (in binary)
-
-> Writes code for me
-> Explains my own code to me
-> Judges my variable names`}
-                    </pre>
-                    <div className="flex gap-2 text-xs">
-                      <span className="px-2 py-1 border border-hacker-orange text-hacker-orange">Python</span>
-                      <span className="px-2 py-1 border border-hacker-orange text-hacker-orange">TensorFlow</span>
-                      <span className="px-2 py-1 border border-hacker-orange text-hacker-orange">Prayers</span>
-                    </div>
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }}
-                  className="terminal-window group cursor-pointer hover:border-hacker-orange-bright transition-all duration-300"
-                >
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-typewriter text-hacker-orange group-hover:animate-pulse">
-                      Portfolio_Site_v420
-                    </h3>
-                    <pre className="text-sm text-hacker-green opacity-80">
-{`Type: Recursive
-Status: You're looking at it
-Meta: Very
-
-> Shows I can code
-> Has a terminal (why? yes)
-> Probably overengineered`}
-                    </pre>
-                    <div className="flex gap-2 text-xs">
-                      <span className="px-2 py-1 border border-hacker-orange text-hacker-orange">Next.js</span>
-                      <span className="px-2 py-1 border border-hacker-orange text-hacker-orange">TypeScript</span>
-                      <span className="px-2 py-1 border border-hacker-orange text-hacker-orange">Caffeine</span>
-                    </div>
-                  </div>
+                  </StyledBox>
                 </motion.div>
               </div>
 
@@ -310,8 +251,8 @@ Meta: Very
               >
                 <StyledBox className="inline-block">
                   <div className="text-center font-typewriter">
-                    <p>More projects in ~/unfinished/</p>
-                    <p>(We don't talk about those)</p>
+                    <p>Real projects coming after I finish this TODO list</p>
+                    <p>(The TODO list is also TODO)</p>
                   </div>
                 </StyledBox>
               </motion.div>

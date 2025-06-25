@@ -79,22 +79,27 @@ const Terminal: React.FC = () => {
     projects: () => (
       <div className="space-y-2">
         <div className="text-hacker-green">{'>'} SELECT * FROM projects WHERE actually_finished = true;</div>
-        <div className="space-y-2 mt-2">
-          <div className="border border-hacker-orange-dim p-2 hover:border-hacker-orange transition-colors">
-            <div className="text-hacker-orange">Project: "It Works On My Machine"</div>
-            <div className="text-sm">A distributed system that only works locally</div>
-            <div className="text-xs text-hacker-green">Status: Schrodinger's Bug 🐛</div>
-          </div>
-          <div className="border border-hacker-orange-dim p-2 hover:border-hacker-orange transition-colors">
-            <div className="text-hacker-orange">DeFi Thing That Actually Works</div>
-            <div className="text-sm">Yield farming but make it sustainable</div>
-            <div className="text-xs text-hacker-green">APY: Over 9000% (just kidding, 12%)</div>
-          </div>
-          <div className="border border-hacker-orange-dim p-2 hover:border-hacker-orange transition-colors">
-            <div className="text-hacker-orange">AI That Writes My Code</div>
-            <div className="text-sm">So I can focus on important things like this portfolio</div>
-            <div className="text-xs text-hacker-green">Accuracy: Yes.</div>
-          </div>
+        <div className="mt-2">
+          <StyledBox className="max-w-md">
+            <div className="text-hacker-orange font-typewriter space-y-2 text-center">
+              <div className="text-xl mb-2 animate-pulse">⚠️ 404: PROJECTS NOT FOUND ⚠️</div>
+              <div>Currently refactoring...</div>
+              <div className="text-sm text-hacker-green">
+                <div>// TODO: Add actual projects</div>
+                <div>// TODO: Learn how to finish projects</div>
+                <div>// TODO: Stop procrastinating</div>
+              </div>
+              <div className="mt-4 text-xs">
+                ETA: Soon™ (2-3 business centuries)
+              </div>
+              <div className="text-xs text-hacker-red mt-2">
+                Error: Coffee levels too low to display projects
+              </div>
+            </div>
+          </StyledBox>
+        </div>
+        <div className="text-xs text-hacker-green mt-2">
+          * Projects are currently being rewritten in Rust for 🚀 blazingly fast 🚀 performance
         </div>
       </div>
     ),
