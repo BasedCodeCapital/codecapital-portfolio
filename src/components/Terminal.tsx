@@ -85,9 +85,9 @@ const Terminal: React.FC = () => {
               <div className="text-xl mb-2 animate-pulse">⚠️ 404: PROJECTS NOT FOUND ⚠️</div>
               <div>Currently refactoring...</div>
               <div className="text-sm text-hacker-green">
-                <div>// TODO: Add actual projects</div>
-                <div>// TODO: Learn how to finish projects</div>
-                <div>// TODO: Stop procrastinating</div>
+                <div>{/* TODO: Add actual projects */}</div>
+                <div>{/* TODO: Learn how to finish projects */}</div>
+                <div>{/* TODO: Stop procrastinating */}</div>
               </div>
               <div className="mt-4 text-xs">
                 ETA: Soon™ (2-3 business centuries)
